@@ -1,0 +1,47 @@
+<html>
+
+	<head>
+
+		<title>Login</title>
+		
+		<style type="text/css">
+			h1 {
+				border-width: medium;
+				border-style: double;
+				border-color: black;
+			}
+
+		</style>	
+		
+		<script>
+			function validarLogin(){
+				nomeUsuario = document.formLogin.nomeUsuario.value
+				senha = document.formLogin.senha.value
+
+				if ((nomeUsuario == "") || (senha == ""))
+					alert("Os campos Nome de Usuario e Senha devem ser preenchidos!!")
+			}
+		</script>
+		
+	</head>
+
+	<body>
+	
+		<form action="" name="formLogin">  <!--<chamar no action o proximo formulario/>-->
+			
+			<h2>Login </h2><br>
+
+			<b>Nome de usuário:</b> <br>
+			<input type="text" name="nomeUsuario" size="40">
+			<br>			
+			<b>Senha:</b> <br>
+			<input type="password" name="senha" size="40">
+			<br> <br>
+			<input type="button" value=" Login " onClick="validarLogin()">
+		
+		</form>
+		
+		
+	</body>
+
+</html>
